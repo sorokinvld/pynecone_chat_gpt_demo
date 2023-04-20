@@ -192,12 +192,3 @@ def index() -> pc.Component:
 # Add state and page to the app.
 app = pc.App(state=State)
 app.compile()
-
-# completion = openai.ChatCompletion.create(
-#     model="gpt-3.5-turbo",
-#     messages=[
-#         {"role": "user", "content": "Can you give me the top 5 programming languges??"}
-#     ],
-# )
-
-# print(completion.choices[0].message)
