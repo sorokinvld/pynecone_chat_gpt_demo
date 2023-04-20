@@ -3,16 +3,9 @@ import pynecone as pc
 import openai
 
 # model: the model string for the ChatGPT version used in this application
-CHAT_MODEL: str = "babbage"
-openai.api_key = "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"
+openai.api_key = "sk-API_KEY_HERE"
 
-# # list models
-# models = openai.Model.list()
-
-# # print the first model's id
-# print(models.data[0].id)
-
-
+#
 class State(pc.State):
     """The app state."""
 
@@ -86,10 +79,6 @@ class State(pc.State):
                         "#2e2f3e",
                     ]
                 )
-
-    # method: reset the UI to show new details
-    def reset_ui(self):
-        pass
 
 
 # method: return data to display from both USER and AI
@@ -203,14 +192,6 @@ def index() -> pc.Component:
 # Add state and page to the app.
 app = pc.App(state=State)
 app.compile()
-
-# deep_purple: #7d55c1
-
-# import os
-# import openai
-
-# # openai.api_key = os.getenv("")
-# openai.api_key = "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"
 
 # completion = openai.ChatCompletion.create(
 #     model="gpt-3.5-turbo",
