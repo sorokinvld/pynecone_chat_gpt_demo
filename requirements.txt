@@ -6,3 +6,4 @@ plotly-express
 googletrans
 typesense
 pynecone
+openai
