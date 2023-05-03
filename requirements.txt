@@ -1,0 +1,8 @@
+email-validator
+black
+pandas
+psycopg2-binary
+plotly-express
+googletrans
+typesense
+pynecone
