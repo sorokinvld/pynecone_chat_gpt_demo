@@ -15,7 +15,7 @@ COPY . .
 RUN pip install wheel && pip install -r requirements.txt
 RUN pc init
 
-CMD ["pc","run" , "--env", "prod"]
+CMD ["pc","run"]
 
 EXPOSE 3000
 EXPOSE 8000
