@@ -17,4 +17,5 @@ RUN pc init
 
 CMD ["pc","run" , "--env", "prod"]
 
-EXPOSE 3000, 8000
+EXPOSE 3000
+EXPOSE 8000
